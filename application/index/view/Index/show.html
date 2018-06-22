@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<center>
+    <table border=1>
+        <th>ID</th>
+        <th>用户名</th>
+        <th>邮箱</th>
+        <th>操作</th>
+        {volist name="arr" id="vo"}
+        <tr>
+            <td>{$vo.id}</td>
+            <td>{$vo.name}</td>
+            <td>{$vo.email}</td>
+            <td><a href="save?id={$vo.id}">修改</a><a href="del?id={$vo.id}">删除</a></td>
+        </tr>
+        {/volist}
+    </table>
+</center>
+</body>
+</html>

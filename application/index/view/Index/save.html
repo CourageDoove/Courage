@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<center>
+    <form action="save" method="post">
+        <table>
+            <tr>
+                <td></td>
+                <td><input type="text" name="id" value="{$res['id']}"></td>
+            </tr>
+            <tr>
+                <td>用户名</td>
+                <td><input type="text" name="name" value="{$res['name']}"></td>
+            </tr>
+            <tr>
+                <td>邮箱</td>
+                <td><input type="text" name="email" value="{$res['email']}"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit" value="修改"></td>
+            </tr>
+        </table>
+    </form>
+</center>
+</body>
+</html>
